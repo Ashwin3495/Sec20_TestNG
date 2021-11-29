@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="IM" value="IronMan"/>
+<parameter name="URL" value="PersonalLoan"/>
+<parameter name="URL1" value="CarLoan"/>
+
+  <test name="137">
+   <groups>
+   <run>
+   <include name="Smoke"/>
+   <include name="Fog"/>
+   </run>
+   </groups>
+
+   <!-- Wrting class is must for execution of groups -->
+   <classes>
+   <class name="test.Lec137_Run"/>
+   <class name="test.Lec138_XML"/>
+   <class name="test.Lec139_Priortize"/>
+   
+   </classes>
+  </test>
+</suite> <!-- Suite -->

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Life" value="Must have skills"/>
+  <listeners>
+    <listener class-name="test.Lec149_Listners"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="137(failed)">
+    <classes>
+      <class name="test.Test2">
+        <methods>
+          <include name="F1"/>
+          <include name="D3"/>
+          <include name="D2"/>
+          <include name="C"/>
+          <include name="F"/>
+        </methods>
+      </class> <!-- test.Test2 -->
+      <class name="test.Test01">
+        <methods>
+          <include name="E"/>
+          <include name="B2"/>
+          <include name="A"/>
+          <include name="A3"/>
+          <include name="E1"/>
+        </methods>
+      </class> <!-- test.Test01 -->
+    </classes>
+  </test> <!-- 137(failed) -->
+</suite> <!-- Failed suite [Suite] -->
